@@ -1,0 +1,13 @@
+{
+    "name": "homecenter-be",
+    "module": "server.js",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "bun run --hot src/server.js"
+    },
+    "dependencies": {
+        "hono": "^4.11.3"
+    },
+    "devDependencies": {}
+}

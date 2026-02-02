@@ -1,0 +1,39 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #b8b4c7;
+    -webkit-box-shadow: inset 0 0 1px #b8b4c7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+html, body, #app {
+    height: 100%;
+}
+body {
+    background-color: var(--color-bg-1);
+    color: var(--color-text-1);
+    color-scheme: dark;
+}
+.main-content {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+h3 {
+    padding: 5px 0 20px 0;
+    margin: 0;
+}
