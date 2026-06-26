@@ -1,6 +1,6 @@
 async function getWanIP() {
     try {
-        const response = await fetch('https://4.ipw.cn')
+        const response = await fetch('https://ip.3322.net/')
         return await response.text()
     } catch (error) {
         console.error('获取外网 IP 失败:', error)
