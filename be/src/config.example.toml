@@ -1,0 +1,30 @@
+# ddns config
+[tencent]
+secretId = ""
+secretKey = ""
+
+[ddns]
+domain = "xxx.me"
+subDomain = "wg"
+recordId = 2225496687 # 重要 腾讯云的控制台直接就可以看ID是多少
+
+[task]
+duration = 10800  # 单位秒
+
+[eth]
+ip = "10.0.3.2"
+
+# wakeonlan servers
+[[wol]]
+label = 'Nas'
+mac = '48:21:0b:3e:19:f0'
+ip = '192.168.1.2'
+status = false
+loading = false
+
+[[wol]]
+label = 'Windows'
+mac = '58:11:22:AE:82:57'
+ip = '192.168.1.20'
+status = false
+loading = false
