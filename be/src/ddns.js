@@ -5,7 +5,7 @@ let lastIp = ''
 const ddns = async () => {
     let currentIp = await getWanIP()
     if (lastIp !== currentIp) {
-        await modifyDNS()
+        await modifyDNS(currentIp)
         lastIp = currentIp
         console.log('修改ip成功')
     } else {

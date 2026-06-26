@@ -12,7 +12,7 @@ app.get('/', (c) => {
     return c.text('Hello Hono!')
 })
 app.get('/ipInfo', async (c) => {
-    return c.json({ status: 'success', data: { ip: await getWanIP(), traffic: await getNetworkTraffic('10.0.3.2') } })
+    return c.json({ status: 'success', data: { ip: await getWanIP(), traffic: await getNetworkTraffic(conf.eth.ip) } })
 })
 
 // wol

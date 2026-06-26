@@ -6,12 +6,12 @@
         "be"
     ],
     "scripts": {
-        "dev": "concurrently --kill-others \"bun run dev:be\" \"bun run dev:fe\"",
-        "dev:fe": "bun run dev --filter=fe",
-        "dev:be": "bun run dev --filter=be",
-        "build": "bun run build --all",
-        "build:fe": "bun run build --filter=fe",
-        "start": "bun run dev --filter=be"
+        "dev": "bun run --workspaces dev",
+        "dev:fe": "bun run --filter './fe' dev",
+        "dev:be": "bun run --filter './be' dev",
+        "build": "bun run --filter '*' build",
+        "build:fe": "bun run --filter './fe' build",
+        "start": "bun run --filter './be' dev"
     },
     "devDependencies": {
         "@types/bun": "^1.3.14",
